@@ -1,0 +1,161 @@
+html,
+body,
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(148, 148, 72);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  height: 100%;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  max-width: 1000px;
+  height: 750px;
+  margin: 10px auto;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 15px 5px rgb(77, 77, 77);
+}
+
+main {
+  display: flex;
+  padding: 10px 5px;
+}
+
+/*  ------------- Styles du HEADER -----------  */
+.header {
+  width: 100%;
+  height: 190px;
+  background-image: url("../assets/images/header.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.header_list {
+  margin: 0 10px;
+}
+
+.header_list_item {
+  display: inline-block;
+  margin: 168px 0 0;
+}
+
+.header_list_item > a {
+  font-size: 13px;
+  font-weight: 600;
+  color: rgb(75, 59, 38);
+  background-color: rgb(224, 219, 212);
+  border-radius: 5px 5px 0 0;
+  padding: 4px 10px;
+}
+
+a.menu_active {
+  background-color: #fff;
+}
+
+.header_list_item > a:hover {
+  background-color: #fff;
+}
+
+/*  ------------- Styles de la Barre Latérale gauche -----------  */
+
+.sidebar {
+  width: 22%;
+  padding: 20px 15px;
+}
+
+.sidebar > h2 {
+  font-size: 16px;
+  color: rgb(75, 59, 38);
+  text-align: center;
+  margin: 20px 0 10px;
+}
+
+.sidebar_topMenu,
+.sidebar_lastPosts {
+  background-color: rgb(224, 219, 212);
+  border-radius: 5px;
+  padding: 10px 5px;
+}
+
+.sidebar_lastPosts_listItem,
+.sidebar_topMenu_listItem {
+  font-size: 13px;
+  font-weight: 300;
+  padding: 5px 5px;
+}
+
+.sidebar_lastPosts_listItem > a,
+.sidebar_topMenu_listItem > a {
+  color: rgb(75, 59, 38);
+  display: inline-block;
+  width: 80%;
+}
+.sidebar_lastPosts_listItem > a:hover,
+.sidebar_topMenu_listItem > a:hover {
+  color: rgb(148, 148, 72);
+}
+
+.sidebar_lastPosts_listItem > span,
+.sidebar_topMenu_listItem > span {
+  margin: auto 5px;
+  float: left;
+}
+
+/*  ------------- Styles de l'Article -----------  */
+
+section {
+  width: 80%;
+  padding: 20px 10px;
+}
+
+h1 {
+  font-size: 24px;
+  color: rgb(61, 89, 141);
+  margin: 0 20px;
+}
+
+.section_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 20px;
+}
+
+.section_text {
+  padding: 5px 10px;
+  width: 75%;
+}
+
+.section_text > p {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 22px;
+  text-align: justify;
+  color: rgb(75, 59, 38);
+}
+
+.section_image {
+  width: 25%;
+  height: 130px;
+  background-color: #fff;
+  padding: 10px;
+}
+
+.section_image > img {
+  width: 100%;
+}
